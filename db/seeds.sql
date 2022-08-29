@@ -1,0 +1,2 @@
+DROP DATABASE IF EXISTS allEmps_db;
+CREATE DATABASE allEmps_db;
