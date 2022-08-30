@@ -140,13 +140,12 @@ function initAddEmployee() {
 
         employees.push(newFirst)
 
-        db.query('INSERT INTO employeeInfo (first_name, last_name, role_id, manager_id) VALUES (?, ?, ?, ?)', [newFirst, newLast, titleId, newEmpManager], function (err, results) {
-            
-        console.log("Added " + newFirst + " " + newLast + " with the title of " + newEmpTitle );
-    })
+        db.query('INSERT INTO employeeInfo (first_name, last_name, role_id, manager_id) VALUES (?, ?, ?, ?)', [newFirst, newLast, titleId, newEmpManager], 
+    )
         initQuestions();
-          });
-    }
+          }
+    )}
+    
 
 
 initQuestions()
